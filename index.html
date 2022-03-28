@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliveira.js</title>
+    <meta name="description" content="Site Portifólio profissional desenvolvido por minha altoria.">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ae5ebb2d85.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!--Estrutura principal do menu-->
+<nav id="nav">
+    <a href="#" id="logo">Oliveira.js</a>
+    <button id="btn-Mobile"><i class="fa-solid fa-bars" id="fa-bars"></i></button>
+    <ul id="menu">
+        <li><a href="#sobre">sobre</a></li>
+        <li><a href="#produtos">produtos</a></li>
+        <li><a href="#galeria">galeria</a></li>
+        <li><a href="#contato">contato</a></li>
+        <button onclick="abrir()">logar</button>
+    </ul>
+</nav>
+
+<div id="bg-modal" class="modal">
+    <div id="modal">
+        <span id="close" onclick="fechar()"><i class="fa-solid fa-square-xmark" id="iconeX"></i></span>
+    </div>
+</div>
+<!--Estrutura principal das sections-->
+<main>
+    <section id="sobre">Sobre</section>
+    <section id="produtos">Produtos</section>
+    <section id="galeria">Galeria</section>
+    <section id="contato">Contato
+        <div id="contato-form">
+        <fieldset>
+            <legend>Informações</legend><br>
+        <form action="#" method="post" id="caixa-form">
+            <img src="logo.png" alt="logo da empresa" id="imagem-form"><br>
+            <input type="text" placeholder="Nome" required><br><br>
+            <input type="text" placeholder="Sobrenome" required><br><br>
+            <input type="email" placeholder="Email de contato" id="email" required><br><br>
+            <textarea  id="text-area" cols="38" rows="10" placeholder="Digite seu texto aqui."></textarea><br>
+            <input type="submit" value="Enviar" id="btn-form">
+        </form>
+    </fieldset>
+    </div>
+    </section>
+</main>
+<!--Estrutura principal do footer-->
+<footer id="footer">
+    <div id="container">
+        <div id="row">
+            <div id="footer-col">
+                <h4>commpany</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div id="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div id="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">adress</a></li>
+                </ul>
+            </div>
+            <div id="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Botão para subir a página-->
+<button id="btn-up" onclick="subir()"><i class="fa-solid fa-circle-arrow-up"></i></button>
+
+<script src="cod.js"></script>
+</body>
+</html>
