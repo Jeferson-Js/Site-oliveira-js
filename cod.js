@@ -35,9 +35,9 @@ function subir(){
 //Função para fazer o botão de 'UP' sumir quando mover o scroll da página.
 function decidir(){
    if(window.scrollY == 0){
-       document.querySelector("#btn-up").style.display = 'none';
+       document.querySelector("#botaoSubir").style.display = 'none';
    }else{
-        document.querySelector("#btn-up").style.display = 'block';
+        document.querySelector("#botaoSubir").style.display = 'block';
    }
 }
 window.addEventListener('scroll', decidir);

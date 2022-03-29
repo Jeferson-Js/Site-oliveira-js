@@ -21,12 +21,15 @@
         <li><a href="#produtos">produtos</a></li>
         <li><a href="#galeria">galeria</a></li>
         <li><a href="#contato">contato</a></li>
-        <button onclick="abrir()">logar</button>
+        <li><button onclick="abrir()">logar</button></li>
     </ul>
 </nav>
 
 <div id="bg-modal" class="modal">
     <div id="modal">
+        <input type="text" name="nome" id="name" placeholder="Digite o seu nome:"><br><br>
+        <input type="password" name="senha" id="senha" placeholder="Digie a sua senha"><br><br>
+        <input type="submit" value="login" onclick="logar()">
         <span id="close" onclick="fechar()"><i class="fa-solid fa-square-xmark" id="iconeX"></i></span>
     </div>
 </div>
@@ -40,7 +43,6 @@
         <fieldset>
             <legend>Informações</legend><br>
         <form action="#" method="post" id="caixa-form">
-            <img src="logo.png" alt="logo da empresa" id="imagem-form"><br>
             <input type="text" placeholder="Nome" required><br><br>
             <input type="text" placeholder="Sobrenome" required><br><br>
             <input type="email" placeholder="Email de contato" id="email" required><br><br>
@@ -95,7 +97,7 @@
     </div>
 </footer>
 <!--Botão para subir a página-->
-<button id="btn-up" onclick="subir()"><i class="fa-solid fa-circle-arrow-up"></i></button>
+<button id="botaoSubir" name="btn-up" onclick="subir()"><i class="fa-solid fa-circle-arrow-up"></i></button>
 
 <script src="cod.js"></script>
 </body>
